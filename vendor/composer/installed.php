@@ -1,22 +1,31 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'a5b0a562de1de7258edd22ad473afc3474c220e6',
+        'reference' => '45962e9c812f0d2a11e115e558b25b8aaab7aebc',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'a5b0a562de1de7258edd22ad473afc3474c220e6',
+            'reference' => '45962e9c812f0d2a11e115e558b25b8aaab7aebc',
+            'dev_requirement' => false,
+        ),
+        'api-platform/core' => array(
+            'pretty_version' => 'v2.6.8',
+            'version' => '2.6.8.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../api-platform/core',
+            'aliases' => array(),
+            'reference' => 'ff3aab5b196709c721960c0bb4f1d52759af737d',
             'dev_requirement' => false,
         ),
         'composer/package-versions-deprecated' => array(
@@ -190,6 +199,15 @@
             'reference' => 'ee0db30118f661fb166bcffbf5d82032df484697',
             'dev_requirement' => false,
         ),
+        'fig/link-util' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../fig/link-util',
+            'aliases' => array(),
+            'reference' => '10e52348a2e9ad4581f2bf3e16458f0861a88c6a',
+            'dev_requirement' => false,
+        ),
         'friendsofphp/proxy-manager-lts' => array(
             'pretty_version' => 'v1.0.5',
             'version' => '1.0.5.0',
@@ -228,6 +246,15 @@
             'replaced' => array(
                 0 => '1.10.2',
             ),
+        ),
+        'nelmio/cors-bundle' => array(
+            'pretty_version' => '2.2.0',
+            'version' => '2.2.0.0',
+            'type' => 'symfony-bundle',
+            'install_path' => __DIR__ . '/../nelmio/cors-bundle',
+            'aliases' => array(),
+            'reference' => '0ee5ee30b0ee08ea122d431ae6e0ddeb87f035c0',
+            'dev_requirement' => false,
         ),
         'nikic/php-parser' => array(
             'pretty_version' => 'v4.13.2',
@@ -315,6 +342,15 @@
             'aliases' => array(),
             'reference' => 'bbcd7380b0ebf3961ee21409db7b38bc31d69a13',
             'dev_requirement' => true,
+        ),
+        'phpstan/phpdoc-parser' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpstan/phpdoc-parser',
+            'aliases' => array(),
+            'reference' => 'dbc093d7af60eff5cd575d2ed761b15ed40bd08e',
+            'dev_requirement' => false,
         ),
         'phpunit/php-code-coverage' => array(
             'pretty_version' => '9.2.10',
@@ -448,8 +484,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache-implementation' => array(
@@ -1332,6 +1368,15 @@
             'install_path' => __DIR__ . '/../webmozart/assert',
             'aliases' => array(),
             'reference' => '6964c76c7804814a842473e0c8fd15bab0f18e25',
+            'dev_requirement' => false,
+        ),
+        'willdurand/negotiation' => array(
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../willdurand/negotiation',
+            'aliases' => array(),
+            'reference' => '04e14f38d4edfcc974114a07d2777d90c98f3d9c',
             'dev_requirement' => false,
         ),
     ),

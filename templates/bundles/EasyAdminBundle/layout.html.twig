@@ -131,7 +131,7 @@
                         <div id="responsive-header-logo" class="text-truncate">
                             {% block responsive_header_logo %}
                                 <a class="responsive-logo" title="Flexy" href="{{ path(ea.dashboardRouteName) }}">
-                                    <img  style="margin:16px 0 20px 14px" src="flexy/img/logo-flexy-600px-white.png" width="150px" />
+                                    <img  style="margin:16px 0 20px 14px" src="{{asset('flexy/img/logo-flexy-600px-white.png')}}" width="150px" />
                                 </a>
                             {% endblock responsive_header_logo %}
                         </div>
@@ -162,8 +162,8 @@
                                         <div id="header-logo">
                                             {% block header_logo %}
                                                 <a class="logo" title="Flexy" href="{{ path(ea.dashboardRouteName) }}">
-                                                    <span class="logo-custom"><img  style="margin:16px 0 20px 14px" src="flexy/img/logo-flexy-600px-white.png" width="150px" /></span>
-                                                    <span class="logo-compact"><img src="flexy/img/favicon-flexy-white.png" /></span>
+                                                    <span class="logo-custom"><img  style="margin:16px 0 20px 14px" src="{{asset('flexy/img/logo-flexy-600px-white.png')}}" width="150px" /></span>
+                                                    <span class="logo-compact"><img src="{{asset('flexy/img/favicon-flexy-white.png')}}" /></span>
                                                 </a>
                                             {% endblock header_logo %}
                                         </div>

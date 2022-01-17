@@ -23,6 +23,10 @@ h6 {
     white-space:nowrap;
 }
 
+.card-body h1{
+	font-size: 1.8rem;
+}
+
 .content-top .content-search input[type=search][name=query] {
 	background: #f8fafc;
 }
