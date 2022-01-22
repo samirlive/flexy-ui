@@ -26,9 +26,11 @@ class DashboardController extends AbstractDashboardController
 
         yield MenuItem::section('POS Caisse');
         yield MenuItem::linkToCrud('Caisse', 'fa fa-tags', Caisse::class);
-        yield MenuItem::linkToRoute('Paniers', 'fas fa-shopping-cart', "cart");
-        yield MenuItem::linkToCrud('Tables', 'fas fa-users', Table::class);
-        yield MenuItem::linkToRoute('Gestion des tables', 'fas fa-shopping-cart', "tables");
+        yield MenuItem::linkToRoute('Panier', 'fas fa-shopping-cart', "cart");
+        yield MenuItem::subMenu('Tables', 'fas fa-swatchbook')->setSubItems([
+            MenuItem::linkToCrud('Gestion des tables', 'fas fa-users', Table::class),
+            MenuItem::linkToRoute('Réservation', 'fas fa-shopping-cart', "tables"),
+        ]);
         
         
         

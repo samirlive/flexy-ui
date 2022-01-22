@@ -22,7 +22,7 @@ class ProductCrudController extends AbstractCrudController
         return [
             TextField::new('name'),
             NumberField::new('price'),
-            ImageField::new('image')->setUploadDir("public/uploads")->setBasePath("uploads"),
+            ImageField::new('image')->setUploadDir("public/uploads")->setBasePath("uploads/"),
         ];
     }
     
