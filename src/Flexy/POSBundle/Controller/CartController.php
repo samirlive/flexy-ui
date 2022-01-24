@@ -2,7 +2,7 @@
 
 namespace App\Flexy\POSBundle\Controller;
 
-use App\Repository\ProductRepository;
+use App\Flexy\ProductBundle\Repository\ProductRepository;
 use App\Flexy\POSBundle\Repository\TableRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;

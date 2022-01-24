@@ -2,6 +2,9 @@ twig:
     default_path: '%kernel.project_dir%/templates'
     paths:
         '%kernel.project_dir%/src/Flexy': Flexy
+    globals:
+        # the value is the service's id
+        notifications: '@App\Service\FlexyNotificationProvider'
 
 when@test:
     twig:

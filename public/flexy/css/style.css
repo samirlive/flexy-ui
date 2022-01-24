@@ -229,6 +229,11 @@ Avatar with green of flexy
 
 /*Override Bootstrap 5*/
 
+
+.dropdown-menu .dropdown-header.notification, .dropdown-menu .dropdown-item.notification{
+	display: block;
+}
+
 .btn {
 	letter-spacing: 0.05rem;
 	padding: 10px 15px;

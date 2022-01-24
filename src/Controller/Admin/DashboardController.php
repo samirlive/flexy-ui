@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Notification;
 use App\Entity\Product;
 use App\Entity\Table;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
@@ -17,7 +18,7 @@ use Symfony\Component\Finder\Finder;
 class DashboardController extends AbstractDashboardController
 {
     /**
-     * @Route("/", name="admin")
+     * @Route("/admin", name="admin")
      */
     public function index(): Response
     {
@@ -44,6 +45,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::section('Stock');
         
         yield MenuItem::linkToCrud('Produits', 'fas fa-users', Product::class);
+        yield MenuItem::linkToCrud('Notifications', 'fas fa-bell', Notification::class);
 
 
         

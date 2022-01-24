@@ -219,8 +219,37 @@
                                 {% endif %}
                             </div>
 
+                            
+                            <div style="margin-right:10px;" class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle p-2 text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-bell" ></i>
+                                        <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-primary text-white">
+                                            <b>{{notifications.getAll()|length}}</b>
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton1">
+                                    {% for notification in notifications.getAll()  %}
+                                        <li><a class="dropdown-item notification" href="#">
+                                        <h6>{{notification.title}}</h6>
+                                        
+                                        <p>
+                                        <small>{{notification.createdAt|date("Y-m-d H:i")}}</small>
+                                        {{notification.message}}
+                                        </p>
+                                        </a></li>
+                                    {% endfor %}
+                                    {% if notifications.getAll()|length == 0  %}
+                                        <li>Aucune notification</li>
+                                    {% endif %}
+                                    </ul>
+                            </div>
+                            
+
                             <div class="navbar-custom-menu">
                                 {% block header_custom_menu %}
+
+                                
                                     <div class="dropdown user-menu-wrapper {{ is_granted(impersonator_permission) ? 'user-is-impersonated' }}">
                                         <a class="user-details" type="button" data-bs-toggle="dropdown" data-bs-offset="0,5" aria-expanded="false">
                                             {{ user_menu_avatar }}

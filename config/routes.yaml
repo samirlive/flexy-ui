@@ -7,3 +7,15 @@ _posbundle:
 _billards:
   resource: '@FlexyBillardsBundle/Resources/config/routes.yaml'
   prefix: /
+_product:
+  resource: '@FlexyProductBundle/Resources/config/routes.yaml'
+  prefix: /
+_stock:
+  resource: '@FlexyStockBundle/Resources/config/routes.yaml'
+  prefix: /
+_front:
+  resource: '@FlexyFrontBundle/Resources/config/routes.yaml'
+  prefix: /
+_shop:
+  resource: '@FlexyShopBundle/Resources/config/routes.yaml'
+  prefix: /

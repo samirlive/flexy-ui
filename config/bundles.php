@@ -17,4 +17,8 @@ return [
     ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle::class => ['all' => true],
     App\Flexy\POSBundle\FlexyPOSBundle::class => ['all' => true],
     App\Flexy\BillardsBundle\FlexyBillardsBundle::class => ['all' => true],
+    App\Flexy\ProductBundle\FlexyProductBundle::class => ['all' => true],
+    App\Flexy\StockBundle\FlexyStockBundle::class => ['all' => true],
+    App\Flexy\FrontBundle\FlexyFrontBundle::class => ['all' => true],
+    App\Flexy\ShopBundle\FlexyShopBundle::class => ['all' => true],
 ];
