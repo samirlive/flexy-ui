@@ -22,7 +22,7 @@ class DashboardController extends AbstractDashboardController
     {
         
 
-        
+        return [];
 
         yield MenuItem::section('POS Caisse');
         yield MenuItem::linkToCrud('Caisse', 'fa fa-tags', Caisse::class);

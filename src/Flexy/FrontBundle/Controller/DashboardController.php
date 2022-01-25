@@ -16,6 +16,7 @@ class DashboardController extends AbstractDashboardController
     {
         
         yield MenuItem::section('Frontend');
+        yield MenuItem::linkToRoute('View the website',"fas fa-eye","front_home");
         
         
         

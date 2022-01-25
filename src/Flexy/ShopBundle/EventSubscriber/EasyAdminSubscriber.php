@@ -3,7 +3,6 @@
 namespace App\Flexy\ShopBundle\EventSubscriber;
 
 use App\Entity\BlogPost;
-use App\Flexy\ShopBundle\Entity\CategoryProductShop;
 use App\Flexy\ShopBundle\Entity\ProductShop;
 use App\Flexy\ShopBundle\Entity\Vendor;
 use EasyCorp\Bundle\EasyAdminBundle\Event\BeforeEntityPersistedEvent;
@@ -50,10 +49,10 @@ class EasyAdminSubscriber implements EventSubscriberInterface
              ));
              //dd($entity);
         }
-        if ($entity instanceof ProductShop or $entity instanceof CategoryProductShop) {
+        if ($entity instanceof ProductShop or $entity ) {
 
             $vendor = $this->em->getRepository(Vendor::class)->findOneBy(["user"=>$this->security->getUser()]);
-
+            
             $entity->setVendor($vendor);
            
         }

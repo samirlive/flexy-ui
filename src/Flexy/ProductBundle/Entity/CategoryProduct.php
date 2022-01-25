@@ -9,14 +9,11 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\Table;
-use Doctrine\ORM\Mapping\Entity;
-use Doctrine\ORM\Mapping\InheritanceType;
 
 /**
  * @ORM\Entity(repositoryClass=CategoryProductRepository::class)
  * @Table(name="flexy_categoryproduct")
- * @Entity
- * @InheritanceType("JOINED")
+
  */
 #[ApiResource]
 class CategoryProduct

@@ -53,10 +53,7 @@ class Vendor
      */
     private $products;
 
-    /**
-     * @ORM\OneToMany(targetEntity=CategoryProductShop::class, mappedBy="vendor")
-     */
-    private $categoryProducts;
+
 
 
     public function __toString()
@@ -165,33 +162,5 @@ class Vendor
         return $this;
     }
 
-    /**
-     * @return Collection|CategoryProduct[]
-     */
-    public function getCategoryProducts(): Collection
-    {
-        return $this->categoryProducts;
-    }
 
-    public function addCategoryProduct(CategoryProductShop $categoryProduct): self
-    {
-        if (!$this->categoryProducts->contains($categoryProduct)) {
-            $this->categoryProducts[] = $categoryProduct;
-            $categoryProduct->setVendor($this);
-        }
-
-        return $this;
-    }
-
-    public function removeCategoryProduct(CategoryProductShop $categoryProduct): self
-    {
-        if ($this->categoryProducts->removeElement($categoryProduct)) {
-            // set the owning side to null (unless already changed)
-            if ($categoryProduct->getVendor() === $this) {
-                $categoryProduct->setVendor(null);
-            }
-        }
-
-        return $this;
-    }
 }

@@ -18,7 +18,7 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
-        
+        return [];
         yield MenuItem::section('BillardsClub');
         yield MenuItem::linkToUrl('Test', 'fas fa-tachometer-alt',"#");
         

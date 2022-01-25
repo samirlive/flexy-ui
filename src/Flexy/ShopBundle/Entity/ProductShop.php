@@ -24,10 +24,7 @@ class ProductShop extends EntityProduct
      */
     private $vendor;
 
-    /**
-     * @ORM\ManyToMany(targetEntity=CategoryProductShop::class, inversedBy="productShops")
-     */
-    private $categories;
+
 
     public function __construct()
     {
@@ -49,27 +46,6 @@ class ProductShop extends EntityProduct
         return $this;
     }
 
-    /**
-     * @return Collection|CategoryProductShop[]
-     */
-    public function getCategories(): Collection
-    {
-        return $this->categories;
-    }
+ 
 
-    public function addCategory(CategoryProductShop $category): self
-    {
-        if (!$this->categories->contains($category)) {
-            $this->categories[] = $category;
-        }
-
-        return $this;
-    }
-
-    public function removeCategory(CategoryProductShop $category): self
-    {
-        $this->categories->removeElement($category);
-
-        return $this;
-    }
 }

@@ -27,7 +27,7 @@ class ArticleCrudController extends AbstractCrudController
             ImageField::new('image')->setUploadDir("public/uploads")->setBasePath("/uploads"),
             "regularPrice",
             "price",
-            AssociationField::new("categoryProducts"),
+            //AssociationField::new("categoryProducts"),
             TextEditorField::new('description'),
             AssociationField::new("stocks")
 

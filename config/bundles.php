@@ -21,4 +21,7 @@ return [
     App\Flexy\StockBundle\FlexyStockBundle::class => ['all' => true],
     App\Flexy\FrontBundle\FlexyFrontBundle::class => ['all' => true],
     App\Flexy\ShopBundle\FlexyShopBundle::class => ['all' => true],
+    Knp\Bundle\MenuBundle\KnpMenuBundle::class => ['all' => true],
+    Lexik\Bundle\FormFilterBundle\LexikFormFilterBundle::class => ['all' => true],
+    Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
 ];

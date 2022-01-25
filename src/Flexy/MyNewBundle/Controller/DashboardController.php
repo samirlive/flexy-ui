@@ -14,7 +14,7 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
-        
+        return [];
         yield MenuItem::section('MyNewClub');
         
         
